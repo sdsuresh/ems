@@ -44,4 +44,8 @@ class User extends Authenticatable
     public function events(){
         return $this->belongsToMany('App\Models\Event');
     }
+
+    public function getFullNameAttribute() {
+        return ucfirst($this->first_name) . ' ' . ucfirst($this->last_name);
+    }
 }
