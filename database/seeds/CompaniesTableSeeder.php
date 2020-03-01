@@ -12,7 +12,6 @@ class CompaniesTableSeeder extends Seeder
      */
     public function run()
     {
-    		DB::table('companies')->truncate();
         $companies = factory(App\Models\Company::class, 15)->create();
     }
 }
