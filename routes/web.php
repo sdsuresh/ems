@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', 'UserController@index');
-Route::get('/user/create', 'UserController@create')->name('users.create');
-Route::post('/user/store', 'UserController@store')->name('users.store');
-Route::get('/user/edit/{id}', 'UserController@edit')->name('users.edit');
-Route::post('/user/update', 'UserController@update')->name('users.update');
+Route::get('/', 'EmployeeController@index');
+Route::get('employee/edit/{id}', 'EmployeeController@edit')->name('employee.edit');
+Route::post('employee/update', 'EmployeeController@update')->name('employee.update');

@@ -10,16 +10,14 @@
 
     <title>@yield('title')</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-  </head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   </head>
 
-  <body>
-    <div class="container">
+   <body>
+   	<div class="container">
+   		@include('includes.header')
+   		@yield('content')
+   	</div>
+   </body>
+  </html>
 
-      @include('includes.header')
-      @yield('content')
-
-    </div> <!-- /container -->
-  </body>
-</html>
